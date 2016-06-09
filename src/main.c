@@ -1,6 +1,9 @@
 #include "modules/foo.h"
+#include <assert.h>
 
 int main(int argc, char ** argv)
 {
-  return foo(argc, argv);
+  int r = foo(argc, argv);
+  assert(r==0);
+  return r;
 }
